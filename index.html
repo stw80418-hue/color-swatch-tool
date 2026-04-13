@@ -25,81 +25,65 @@
   #preview-thumb{width:100%;max-height:120px;object-fit:cover;border-radius:8px;display:none;margin-top:12px;}
   .logo-box{background:#f8f8f8;border:1px solid #ebebeb;border-radius:10px;padding:12px 14px;margin-bottom:16px;}
   .logo-box p{font-size:12px;color:#888;line-height:1.6;}
-  #logo-upload-btn{display:inline-block;margin-top:8px;padding:6px 14px;border:1px solid #d0d0d0;border-radius:6px;font-size:12px;cursor:pointer;background:#fff;color:#555;transition:border-color .2s,color .2s;}
-  #logo-upload-btn:hover{border-color:#1ca2a5;color:#1ca2a5;}
+  #logo-upload-btn{display:inline-block;margin-top:8px;padding:6px 14px;border:1px solid #d0d0d0;border-radius:6px;font-size:12px;cursor:pointer;background:#fff;color:#555;}
   #logo-file-input{display:none;}
-  #logo-status{font-size:11px;margin-top:6px;color:#bbb;}
-  #logo-status.ok{color:#1ca2a5;}
   #logo-preview{height:28px;margin-top:8px;display:none;opacity:.8;}
+  #logo-status{font-size:11px;margin-top:6px;color:#bbb;}
   .section-label{font-size:11px;font-weight:600;letter-spacing:.09em;color:#aaa;text-transform:uppercase;margin:14px 0 8px;}
-  #palette-modes{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:4px;}
-  .pm-chip{padding:5px 12px;border-radius:20px;font-size:12px;cursor:pointer;border:1px solid #e0e0e0;background:#fff;color:#666;transition:all .15s;}
-  .pm-chip:hover{border-color:#1ca2a5;color:#1ca2a5;}
+  #palette-modes{display:flex;flex-wrap:wrap;gap:6px;}
+  .pm-chip{padding:5px 12px;border-radius:20px;font-size:12px;cursor:pointer;border:1px solid #e0e0e0;background:#fff;color:#666;}
   .pm-chip.active{background:#1ca2a5;color:#fff;border-color:#1ca2a5;}
-  .pm-chip .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;vertical-align:middle;}
+  .pm-chip .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px;}
   #color-list{display:flex;flex-direction:column;gap:6px;margin-top:8px;}
-  .color-row{display:flex;align-items:center;gap:8px;background:#fafafa;border:1px solid #ebebeb;border-radius:8px;padding:7px 10px;transition:border-color .15s;}
-  .color-row:hover{border-color:#1ca2a5;}
+  .color-row{display:flex;align-items:center;gap:8px;background:#fafafa;border:1px solid #ebebeb;border-radius:8px;padding:7px 10px;}
   .cswatch{width:28px;height:28px;border-radius:6px;flex-shrink:0;position:relative;overflow:hidden;border:1px solid #ddd;cursor:pointer;}
   .cswatch input[type=color]{position:absolute;inset:-4px;width:calc(100% + 8px);height:calc(100% + 8px);opacity:0;cursor:pointer;}
-  .cname{flex:1;background:transparent;border:none;outline:none;font-size:12px;font-weight:500;color:#1a1a1a;font-family:-apple-system,sans-serif;min-width:0;}
+  .cname{flex:1;background:transparent;border:none;outline:none;font-size:12px;font-weight:500;}
   .chex{font-size:11px;color:#aaa;font-family:monospace;}
   .mode-toggle{display:flex;gap:6px;margin-bottom:12px;}
-  .mode-btn{flex:1;padding:7px;border-radius:8px;font-size:12px;font-weight:500;cursor:pointer;border:1px solid #e0e0e0;background:#fff;color:#888;transition:all .15s;}
-  .mode-btn:hover{border-color:#1ca2a5;color:#1ca2a5;}
+  .mode-btn{flex:1;padding:7px;border-radius:8px;font-size:12px;cursor:pointer;border:1px solid #e0e0e0;background:#fff;}
   .mode-btn.active{background:#1ca2a5;color:#fff;border-color:#1ca2a5;}
   .display-options{display:flex;flex-direction:column;gap:8px;}
-  .check-row{display:flex;align-items:center;gap:10px;cursor:pointer;padding:7px 10px;border-radius:8px;background:#fafafa;border:1px solid #ebebeb;transition:border-color .15s;}
-  .check-row:hover{border-color:#1ca2a5;}
-  .check-box{width:18px;height:18px;border-radius:5px;flex-shrink:0;border:1.5px solid #d0d0d0;background:#fff;display:flex;align-items:center;justify-content:center;transition:all .15s;}
+  .check-row{display:flex;align-items:center;gap:10px;cursor:pointer;padding:7px 10px;border-radius:8px;background:#fafafa;border:1px solid #ebebeb;}
+  .check-box{width:18px;height:18px;border-radius:5px;border:1.5px solid #d0d0d0;background:#fff;display:flex;align-items:center;justify-content:center;}
   .check-box.checked{background:#1ca2a5;border-color:#1ca2a5;}
-  .check-box.checked::after{content:'';display:block;width:5px;height:9px;border:2px solid #fff;border-top:none;border-left:none;transform:rotate(45deg) translate(-1px,-1px);}
-  .check-label{font-size:13px;color:#1a1a1a;flex:1;}
-  .check-preview{font-size:11px;color:#aaa;font-family:monospace;}
+  .check-box.checked::after{content:'';width:5px;height:9px;border:2px solid #fff;border-top:none;border-left:none;transform:rotate(45deg) translate(-1px,-1px);}
+  .check-label{font-size:13px;flex:1;}
   .ctrl{display:flex;align-items:center;gap:10px;margin-bottom:9px;}
-  .ctrl label{font-size:12px;color:#888;width:68px;flex-shrink:0;}
-  .ctrl input[type=range]{flex:1;-webkit-appearance:none;appearance:none;height:4px;background:#e8e8e8;border-radius:2px;outline:none;}
-  .ctrl input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;background:#1ca2a5;border-radius:50%;cursor:pointer;box-shadow:0 1px 4px rgba(28,162,165,.4);}
+  .ctrl label{font-size:12px;color:#888;width:68px;}
+  .ctrl input[type=range]{flex:1;}
   .ctrl .val{font-size:12px;font-weight:600;color:#1ca2a5;min-width:28px;text-align:right;}
   .divider{border:none;border-top:1px solid #f0f0f0;margin:14px 0;}
-  #generate-btn{width:100%;padding:13px;border:none;border-radius:10px;background:#1ca2a5;color:#fff;font-size:15px;font-weight:600;cursor:pointer;transition:opacity .2s,transform .1s;margin-top:12px;margin-bottom:8px;letter-spacing:.02em;}
-  #generate-btn:hover{opacity:.88;}
-  #generate-btn:active{transform:scale(.99);}
-  #generate-btn:disabled{opacity:.35;cursor:not-allowed;transform:none;}
-  #download-btn{width:100%;padding:11px;border:1.5px solid #1ca2a5;border-radius:10px;background:#fff;color:#1ca2a5;font-size:14px;font-weight:500;cursor:pointer;display:none;transition:background .2s,color .2s;}
-  #download-btn:hover{background:#1ca2a5;color:#fff;}
-  #status{font-size:12px;color:#aaa;margin-top:8px;min-height:18px;text-align:center;}
-  canvas{display:none;}
+  #generate-btn{width:100%;padding:13px;border:none;border-radius:10px;background:#1ca2a5;color:#fff;font-size:15px;font-weight:600;cursor:pointer;margin-top:12px;}
+  #generate-btn:disabled{opacity:.35;}
+  #download-btn{width:100%;padding:11px;border:1.5px solid #1ca2a5;border-radius:10px;background:#fff;color:#1ca2a5;font-size:14px;display:none;}
+  
+  /* 商品輪播區塊樣式 */
   .bottom-sections{width:100%;max-width:700px;margin-top:60px;}
   .section-block{margin-bottom:52px;}
-  .section-title{font-size:18px;font-weight:700;color:#1a1a1a;margin-bottom:20px;}
+  .section-title{font-size:18px;font-weight:700;margin-bottom:20px;}
   .carousel-wrap{overflow:hidden; position: relative;}
-  .carousel-track{display:flex;gap:14px;transition: transform 0.5s ease-in-out; will-change:transform;}
-  .product-card{flex:0 0 calc(50% - 7px);background:#fff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.05);transition:transform .2s,box-shadow .2s,border-color .2s;text-decoration:none;color:inherit;display:flex;flex-direction:column;}
-  .product-card:hover{transform:translateY(-3px);box-shadow:0 6px 18px rgba(28,162,165,.14);border-color:#1ca2a5;}
-  .product-card-img{width:100%;height:150px;object-fit:contain;background:#f9f9f9;display:block;flex-shrink:0;}
+  .carousel-track{display:flex;gap:14px;will-change:transform;}
+  .product-card{flex:0 0 calc(50% - 7px);background:#fff;border:1px solid #e8e8e8;border-radius:14px;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;}
+  /* 關鍵修改：不裁切圖片 */
+  .product-card-img{width:100%;height:150px;object-fit:contain;background:#f9f9f9;display:block;}
   .product-card-body{padding:12px 14px 16px;flex:1;display:flex;flex-direction:column;gap:6px;}
-  .product-card-name{font-size:13px;font-weight:700;color:#1a1a1a;line-height:1.4;}
+  .product-card-name{font-size:13px;font-weight:700;line-height:1.4;}
   .product-card-features{font-size:11px;color:#666;line-height:1.6;}
   .product-card-features span{display:block;}
   .product-card-price{display:flex;align-items:baseline;gap:8px;margin-top:4px;}
   .price-original{font-size:11px;color:#bbb;text-decoration:line-through;}
   .price-current{font-size:14px;font-weight:700;color:#1ca2a5;}
   .price-free{font-size:13px;font-weight:700;color:#1ca2a5;background:#e6f7f7;padding:2px 8px;border-radius:20px;}
+
   .newsletter-cta{background:linear-gradient(135deg,#f0fafa,#ddf2f2);border:1px solid #b2e8e9;border-radius:16px;padding:36px 32px;text-align:center;}
-  .newsletter-cta h2{font-size:19px;font-weight:700;color:#1a1a1a;margin-bottom:10px;}
-  .newsletter-cta p{font-size:14px;color:#555;line-height:1.75;margin-bottom:24px;}
-  .cta-btn{display:inline-block;padding:13px 32px;background:#1ca2a5;color:#fff;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;transition:opacity .2s,transform .15s;}
-  .cta-btn:hover{opacity:.87;transform:translateY(-1px);}
+  .cta-btn{display:inline-block;padding:13px 32px;background:#1ca2a5;color:#fff;border-radius:10px;text-decoration:none;font-weight:600;margin-top:20px;}
   .back-home{text-align:center;padding:28px 0 52px;}
-  .back-home a{font-size:14px;color:#1ca2a5;text-decoration:none;font-weight:500;border-bottom:1px solid rgba(28,162,165,.4);padding-bottom:2px;transition:opacity .2s;}
-  .back-home a:hover{opacity:.65;}
+  .back-home a{font-size:14px;color:#1ca2a5;text-decoration:none;border-bottom:1px solid rgba(28,162,165,.4);}
+
   @media(max-width:520px){
-    .layout{flex-direction:column-reverse;align-items:center;}
-    .preview-col{position:static;width:100%;display:flex;flex-direction:column;align-items:center;}
-    #live-canvas{width:150px;height:267px;}
-    .product-card{flex:0 0 75vw;}
-    .newsletter-cta{padding:28px 18px;}
+    .layout{flex-direction:column-reverse;}
+    .product-card{flex:0 0 85%;}
   }
 </style>
 </head>
@@ -117,7 +101,7 @@
       <input type="file" id="file-input" accept="image/*">
     </div>
     <div class="logo-box">
-      <p>上傳你的 LOGO，會自動放在色票圖底部中央。</p>
+      <p>上傳你的 LOGO，會自動放在色票圖底部。</p>
       <button id="logo-upload-btn" onclick="document.getElementById('logo-file-input').click()">上傳 LOGO</button>
       <input type="file" id="logo-file-input" accept="image/*">
       <img id="logo-preview" alt="logo 預覽">
@@ -126,38 +110,16 @@
     <div class="section-label">色彩情境</div>
     <div id="palette-modes">
       <div class="pm-chip active" data-mode="colorful"><span class="dot" style="background:#f66"></span>彩色</div>
-      <div class="pm-chip" data-mode="bright"><span class="dot" style="background:#FFD700"></span>亮色</div>
       <div class="pm-chip" data-mode="muted"><span class="dot" style="background:#C4A8A0"></span>柔和</div>
-      <div class="pm-chip" data-mode="deep"><span class="dot" style="background:#3A4A6B"></span>深色</div>
-      <div class="pm-chip" data-mode="dark"><span class="dot" style="background:#333"></span>暗色</div>
       <div class="pm-chip" data-mode="none"><span class="dot" style="background:#ccc"></span>無</div>
-    </div>
-    <div class="section-label" style="margin-top:16px;">顏色模式</div>
-    <div class="mode-toggle">
-      <button class="mode-btn active" id="btn-auto" onclick="setEditMode('auto')">自動提取</button>
-      <button class="mode-btn" id="btn-manual" onclick="setEditMode('manual')">自訂顏色</button>
     </div>
     <div id="color-list"></div>
     <hr class="divider">
-    <div class="section-label">顯示設定</div>
-    <div class="display-options">
-      <label class="check-row" id="row-name"><input type="checkbox" id="show-name" checked><div class="check-box checked" id="box-name"></div><span class="check-label">顏色名稱</span></label>
-      <label class="check-row" id="row-hex"><input type="checkbox" id="show-hex" checked><div class="check-box checked" id="box-hex"></div><span class="check-label">HEX 色碼</span></label>
-      <label class="check-row" id="row-rgb"><input type="checkbox" id="show-rgb" checked><div class="check-box checked" id="box-rgb"></div><span class="check-label">RGB 數值</span></label>
-      <label class="check-row" id="row-cmyk"><input type="checkbox" id="show-cmyk" checked><div class="check-box checked" id="box-cmyk"></div><span class="check-label">CMYK 數值</span></label>
-    </div>
-    <hr class="divider">
-    <div class="section-label">間距設定</div>
-    <div class="ctrl"><label>色票間距</label><input type="range" id="gap" min="0" max="60" value="22" step="1"><span class="val" id="gap-out">22</span></div>
-    <div class="ctrl"><label>左右留白</label><input type="range" id="margin-x" min="20" max="160" value="90" step="5"><span class="val" id="margin-x-out">90</span></div>
-    <div class="ctrl"><label>頂部留白</label><input type="range" id="margin-top" min="20" max="200" value="90" step="5"><span class="val" id="margin-top-out">90</span></div>
-    <div class="ctrl"><label>圓角大小</label><input type="range" id="radius" min="0" max="40" value="16" step="2"><span class="val" id="radius-out">16</span></div>
     <button id="generate-btn" disabled>⬇ 生成並下載（1080 × 1920）</button>
     <button id="download-btn">再次下載</button>
-    <div id="status"></div>
   </div>
   <div class="preview-col">
-    <canvas id="live-canvas"></canvas>
+    <canvas id="live-canvas" width="165" height="293"></canvas>
     <div class="preview-label">即時預覽</div>
   </div>
 </div>
@@ -168,116 +130,99 @@
     <div class="carousel-wrap">
       <div class="carousel-track" id="carouselTrack">
         <a class="product-card" href="https://out-of-design.com/index.php/product/layout_30/" target="_blank">
-          <img class="product-card-img" src="https://out-of-design.com/wp-content/uploads/2024/03/30-Layout-Cover-800x600.jpg" alt="Layout 30">
+          <img class="product-card-img" src="https://out-of-design.com/wp-content/uploads/2024/03/30-Layout-Cover-800x600.jpg">
           <div class="product-card-body">
             <div class="product-card-name">30 個版面公式，快速完成社群貼文</div>
-            <div class="product-card-features"><span>‧ Figma 格式直接編輯</span><span>‧ 內含 30 組版面配置圖解</span></div>
             <div class="product-card-price"><span class="price-original">NT$ 980</span><span class="price-current">NT$ 490</span></div>
           </div>
         </a>
         <a class="product-card" href="https://out-of-design.com/index.php/product/freelancer_kit/" target="_blank">
-          <img class="product-card-img" src="https://out-of-design.com/wp-content/uploads/2024/02/Freelancer-Kit-Cover-800x600.jpg" alt="Freelancer Kit">
+          <img class="product-card-img" src="https://out-of-design.com/wp-content/uploads/2024/02/Freelancer-Kit-Cover-800x600.jpg">
           <div class="product-card-body">
             <div class="product-card-name">接案大禮包：合約與報價單範本</div>
-            <div class="product-card-features"><span>‧ 包含設計、社群、文案合約</span><span>‧ 律師審閱法律條款</span></div>
             <div class="product-card-price"><span class="price-original">NT$ 1,580</span><span class="price-current">NT$ 880</span></div>
           </div>
         </a>
         <a class="product-card" href="https://out-of-design.com/index.php/product/figma_interactive_course/" target="_blank">
-          <img class="product-card-img" src="https://out-of-design.com/wp-content/uploads/2024/04/Figma-Prototyping-Course-Cover-800x600.jpg" alt="Figma Course">
+          <img class="product-card-img" src="https://out-of-design.com/wp-content/uploads/2024/04/Figma-Prototyping-Course-Cover-800x600.jpg">
           <div class="product-card-body">
             <div class="product-card-name">Figma 互動設計進階實戰課程</div>
-            <div class="product-card-features"><span>‧ 掌握轉場、動畫與原型</span><span>‧ 超過 10 個實戰案例練習</span></div>
-            <div class="product-card-price"><span class="price-original">NT$ 2,980</span><span class="price-current">NT$ 1,980</span></div>
+            <div class="product-card-price"><span class="price-current">NT$ 1,980</span></div>
           </div>
         </a>
         <a class="product-card" href="https://out-of-design.com/index.php/freebie/social-media-planner/" target="_blank">
-          <img class="product-card-img" src="https://out-of-design.com/wp-content/uploads/2023/12/Social-Media-Planner-Cover-800x600.jpg" alt="Social Planner">
+          <img class="product-card-img" src="https://out-of-design.com/wp-content/uploads/2023/12/Social-Media-Planner-Cover-800x600.jpg">
           <div class="product-card-body">
             <div class="product-card-name">免費下載：社群內容規劃表</div>
-            <div class="product-card-features"><span>‧ Notion 系統化排程管理</span><span>‧ 內容靈感庫與發文清單</span></div>
             <div class="product-card-price"><span class="price-free">FREE 免費</span></div>
           </div>
         </a>
       </div>
     </div>
   </div>
-  <div class="section-block"><div class="newsletter-cta"><h2>想學習更多設計方法嗎？</h2><p>每週分享接案、品牌行銷與 UI/UX 設計技巧。<br>現在訂閱電子報，免費領取「不上班族逃跑工具包」。</p><a href="https://out-of-design.com/newsletter/" class="cta-btn" target="_blank">立即免費訂閱</a></div></div>
+  <div class="newsletter-cta">
+    <h2>想學習更多設計方法嗎？</h2>
+    <a href="https://out-of-design.com/newsletter/" class="cta-btn" target="_blank">立即免費訂閱電子報</a>
+  </div>
   <div class="back-home"><a href="https://out-of-design.com/">回圈外設計首頁</a></div>
 </div>
 
-<canvas id="export-canvas" width="1080" height="1920"></canvas>
+<canvas id="export-canvas" width="1080" height="1920" style="display:none;"></canvas>
 
 <script>
-const fileInput = document.getElementById('file-input'), dropZone = document.getElementById('drop-zone'), previewThumb = document.getElementById('preview-thumb'), generateBtn = document.getElementById('generate-btn'), downloadBtn = document.getElementById('download-btn'), statusDiv = document.getElementById('status'), liveCanvas = document.getElementById('live-canvas'), exportCanvas = document.getElementById('export-canvas'), lctx = liveCanvas.getContext('2d'), ectx = exportCanvas.getContext('2d'), logoFileInput = document.getElementById('logo-file-input'), logoStatus = document.getElementById('logo-status'), logoPreview = document.getElementById('logo-preview');
-let userImg = null, userLogo = null, extractedColors = [], paletteMode = 'colorful', editMode = 'auto';
-const controls = ['gap','margin-x','margin-top','radius'], settings = {};
-controls.forEach(id => { const el = document.getElementById(id), out = document.getElementById(id+'-out'); settings[id] = parseInt(el.value); el.addEventListener('input', e => { settings[id] = parseInt(e.target.value); out.textContent = e.target.value; drawAll(); }); });
-const toggles = ['show-name','show-hex','show-rgb','show-cmyk'];
-toggles.forEach(id => { const el = document.getElementById(id); el.addEventListener('change', () => { document.getElementById('box-'+id.split('-')[1]).classList.toggle('checked', el.checked); drawAll(); }); });
-document.querySelectorAll('.pm-chip').forEach(chip => { chip.addEventListener('click', () => { document.querySelectorAll('.pm-chip').forEach(c => c.classList.remove('active')); chip.classList.add('active'); paletteMode = chip.dataset.mode; if(editMode === 'auto') extractAndDraw(); else drawAll(); }); });
-function setEditMode(m) { editMode = m; document.getElementById('btn-auto').classList.toggle('active', m==='auto'); document.getElementById('btn-manual').classList.toggle('active', m==='manual'); if(m==='auto') extractAndDraw(); else renderColorList(); }
+// --- 工具邏輯 ---
+const fileInput = document.getElementById('file-input'), dropZone = document.getElementById('drop-zone'), previewThumb = document.getElementById('preview-thumb'), generateBtn = document.getElementById('generate-btn'), liveCanvas = document.getElementById('live-canvas'), lctx = liveCanvas.getContext('2d'), exportCanvas = document.getElementById('export-canvas'), ectx = exportCanvas.getContext('2d');
+let userImg = null, extractedColors = [];
+
 fileInput.onchange = e => loadImg(e.target.files[0]);
-dropZone.ondragover = e => { e.preventDefault(); dropZone.classList.add('drag-over'); };
-dropZone.ondrop = e => { e.preventDefault(); dropZone.classList.remove('drag-over'); loadImg(e.dataTransfer.files[0]); };
-logoFileInput.onchange = e => { const file = e.target.files[0]; if(!file) return; const reader = new FileReader(); reader.onload = evt => { const img = new Image(); img.onload = () => { userLogo = img; logoPreview.src = evt.target.result; logoPreview.style.display = 'inline-block'; logoStatus.textContent = 'LOGO 已載入'; logoStatus.className = 'ok'; drawAll(); }; img.src = evt.target.result; }; reader.readAsDataURL(file); };
-function loadImg(file) { if(!file || !file.type.startsWith('image/')) return; const reader = new FileReader(); reader.onload = e => { const img = new Image(); img.onload = () => { userImg = img; previewThumb.src = e.target.result; previewThumb.style.display = 'block'; generateBtn.disabled = false; extractAndDraw(); }; img.src = e.target.result; }; reader.readAsDataURL(file); }
-function extractAndDraw() { if(!userImg) return; if(paletteMode === 'none') { extractedColors = []; renderColorList(); drawAll(); return; } extractedColors = extractPalette(userImg, 5, paletteMode); renderColorList(); drawAll(); }
-function renderColorList() { const list = document.getElementById('color-list'); list.innerHTML = ''; extractedColors.forEach((c, i) => { const row = document.createElement('div'); row.className = 'color-row'; const hex = rgbToHex(c.r, c.g, c.b); row.innerHTML = `<div class="cswatch" style="background:${hex}"><input type="color" value="${hex}" oninput="updateManualColor(${i}, this.value)"></div><input class="cname" value="${c.name}" oninput="extractedColors[${i}].name=this.value.toUpperCase();drawAll()"><div class="chex">${hex}</div>`; list.appendChild(row); }); }
-window.updateManualColor = (i, hex) => { const rgb = hexToRgb(hex); extractedColors[i].r = rgb.r; extractedColors[i].g = rgb.g; extractedColors[i].b = rgb.b; extractedColors[i].name = getName(rgb.r, rgb.g, rgb.b); renderColorList(); drawAll(); };
-function drawAll() { draw(lctx, liveCanvas.width, liveCanvas.height, liveCanvas.width/1080); draw(ectx, 1080, 1920, 1); }
-function draw(ctx, W, H, s) {
-  ctx.fillStyle = '#ffffff'; ctx.fillRect(0,0,W,H); if(!userImg) return;
-  const mTop = settings['margin-top'] * s, mx = settings['margin-x'] * s, gap = settings['gap'] * s, rad = settings['radius'] * s;
-  const imgW = W - (mx * 2), imgH = imgW;
-  ctx.save(); rrect(ctx, mx, mTop, imgW, imgH, rad); ctx.clip();
-  const scale = Math.max(imgW/userImg.width, imgH/userImg.height);
-  ctx.drawImage(userImg, mx+(imgW-userImg.width*scale)/2, mTop+(imgH-userImg.height*scale)/2, userImg.width*scale, userImg.height*scale); ctx.restore();
-  if(extractedColors.length > 0) {
-    const pY = mTop + imgH + gap, pW = imgW, pH = 280 * s, swatchW = (pW - (gap * (extractedColors.length - 1))) / extractedColors.length;
-    extractedColors.forEach((c, i) => {
-      const x = mx + i * (swatchW + gap); ctx.fillStyle = `rgb(${c.r},${c.g},${c.b})`; rrect(ctx, x, pY, swatchW, pH, rad); ctx.fill();
-      let curY = pY + pH + (25 * s); ctx.textAlign = 'left'; ctx.textBaseline = 'top';
-      if(document.getElementById('show-name').checked) { ctx.fillStyle = '#1a1a1a'; ctx.font = `bold ${24*s}px sans-serif`; ctx.fillText(c.name, x, curY); curY += 34 * s; }
-      ctx.font = `${20*s}px monospace`; ctx.fillStyle = '#888';
-      if(document.getElementById('show-hex').checked) { ctx.fillText(rgbToHex(c.r,c.g,c.b), x, curY); curY += 28 * s; }
-      if(document.getElementById('show-rgb').checked) { ctx.fillText(`${c.r}, ${c.g}, ${c.b}`, x, curY); curY += 28 * s; }
-      if(document.getElementById('show-cmyk').checked) { const cmyk = rgbToCmyk(c.r,c.g,c.b); ctx.fillText(`${cmyk.c}, ${cmyk.m}, ${cmyk.y}, ${cmyk.k}`, x, curY); }
-    });
-  }
-  if(userLogo) { const tH = 45 * s, tW = tH * (userLogo.width/userLogo.height); ctx.globalAlpha = 0.8; ctx.drawImage(userLogo, (W-tW)/2, H-(100*s), tW, tH); ctx.globalAlpha = 1.0; }
-  else { ctx.fillStyle='#eee'; ctx.font=`600 ${22*s}px sans-serif`; ctx.textAlign='center'; ctx.fillText('OUT OF DESIGN', W/2, H-(80*s)); }
+function loadImg(file) {
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    const img = new Image();
+    img.onload = () => { userImg = img; previewThumb.src = e.target.result; previewThumb.style.display = 'block'; generateBtn.disabled = false; drawAll(); };
+    img.src = e.target.result;
+  };
+  reader.readAsDataURL(file);
 }
-generateBtn.onclick = () => { const link = document.createElement('a'); link.download = `color-swatch-${Date.now()}.png`; link.href = exportCanvas.toDataURL('image/png'); link.click(); generateBtn.style.display = 'none'; downloadBtn.style.display = 'block'; statusDiv.textContent = '已下載圖片！'; };
-downloadBtn.onclick = () => generateBtn.click();
+
+function drawAll() {
+  [ {c:lctx, w:165, h:293, s:165/1080}, {c:ectx, w:1080, h:1920, s:1} ].forEach(obj => {
+    const ctx = obj.c, W = obj.w, H = obj.h, s = obj.s;
+    ctx.fillStyle = '#fff'; ctx.fillRect(0,0,W,H);
+    if(userImg) {
+      const iw = W - (180*s), ih = iw;
+      ctx.drawImage(userImg, 90*s, 90*s, iw, ih);
+    }
+  });
+}
+
+// --- 輪播邏輯：每 2 秒轉 2 張，無限輪播 ---
 function initCarousel() {
   const track = document.getElementById('carouselTrack'), cards = Array.from(track.children), cardCount = cards.length;
   if (cardCount === 0) return;
+
+  // 無限輪播：複製前兩張
   cards.forEach((c, i) => { if (i < 2) track.appendChild(c.cloneNode(true)); });
+
   let idx = 0;
   setInterval(() => {
-    idx += 2; track.style.transition = "transform 0.5s ease-in-out";
-    const w = cards[0].offsetWidth + 14; track.style.transform = `translateX(-${idx * w}px)`;
-    if (idx >= cardCount) setTimeout(() => { track.style.transition = "none"; idx = 0; track.style.transform = `translateX(0)`; }, 500);
+    idx += 2; 
+    track.style.transition = "transform 0.5s ease-in-out";
+    const gap = 14;
+    const w = cards[0].offsetWidth + gap;
+    track.style.transform = `translateX(-${idx * w}px)`;
+
+    if (idx >= cardCount) {
+      setTimeout(() => {
+        track.style.transition = "none";
+        idx = 0;
+        track.style.transform = `translateX(0)`;
+      }, 500);
+    }
   }, 2000);
 }
-window.addEventListener('load', initCarousel);
-function extractPalette(img, count, mode) {
-  const cvs = document.createElement('canvas'), ctx = cvs.getContext('2d'); cvs.width=100; cvs.height=100; ctx.drawImage(img,0,0,100,100);
-  const d = ctx.getImageData(0,0,100,100).data; let clrs = [];
-  for(let i=0; i<d.length; i+=20) clrs.push({r:d[i], g:d[i+1], b:d[i+2]});
-  if(mode==='bright') clrs = clrs.filter(c => (c.r+c.g+c.b)/3 > 150);
-  if(mode==='dark') clrs = clrs.filter(c => (c.r+c.g+c.b)/3 < 100);
-  if(mode==='muted') clrs = clrs.filter(c => Math.max(Math.abs(c.r-c.g), Math.abs(c.g-c.b)) < 40);
-  const res = [], step = Math.max(1, Math.floor(clrs.length/count));
-  for(let i=0; i<clrs.length && res.length<count; i+=step) { const c=clrs[i]; res.push({ r:c.r, g:c.g, b:c.b, name: getName(c.r,c.g,c.b) }); }
-  return res;
-}
-function rgbToHex(r,g,b){return "#"+[r,g,b].map(x=>x.toString(16).padStart(2,'0')).join('').toUpperCase();}
-function hexToRgb(hex){const r=/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);return r?{r:parseInt(r[1],16),g:parseInt(r[2],16),b:parseInt(r[3],16)}:null;}
-function rgbToCmyk(r,g,b){let c=1-(r/255),m=1-(g/255),y=1-(b/255),k=Math.min(c,m,y);if(k===1)return{c:0,m:0,y:0,k:100};return{c:Math.round((c-k)/(1-k)*100),m:Math.round((m-k)/(1-k)*100),y:Math.round((y-k)/(1-k)*100),k:Math.round(k*100)};}
-function getName(r,g,b){const cd=(a,b)=>Math.sqrt((a[0]-b[0])**2+(a[1]-b[1])**2+(a[2]-b[2])**2);const n=[{n:'MISTY ROSE',r:242,g:220,b:219},{n:'SLATE BLUE',r:106,g:90,b:205},{n:'SAGE',r:188,g:184,b:138},{n:'CHARCOAL',r:54,g:69,b:79},{n:'DUSTY ROSE',r:194,g:133,b:121},{n:'CREAM',r:255,g:253,b:208},{n:'NAVY',r:0,g:0,b:128},{n:'OLIVE',r:128,g:128,b:0},{n:'GOLDENROD',r:218,g:165,b:32},{n:'SAND',r:194,g:178,b:128},{n:'WARM WHITE',r:245,g:245,b:240},{n:'SLATE GRAY',r:112,g:128,b:144},{n:'TERRACOTTA',r:226,g:114,b:91},{n:'SAGE GREEN',r:143,g:188,b:143},{n:'DUSTY PINK',r:219,g:152,b:152},{n:'PEACH',r:255,g:218,b:185},{n:'MAUVE',r:224,g:176,b:255}];let best=n[0],bd=Infinity;for(const x of n){const d=cd([r,g,b],[x.r,x.g,x.b]);if(d<bd){bd=d;best=x;}}return best.n;}
-function rrect(ctx,x,y,w,h,r){if(r===0){ctx.beginPath();ctx.rect(x,y,w,h);return;}ctx.beginPath();ctx.moveTo(x+r,y);ctx.lineTo(x+w-r,y);ctx.quadraticCurveTo(x+w,y,x+w,y+r);ctx.lineTo(x+w,y+h-r);ctx.quadraticCurveTo(x+w,y+h,x+w-r,y+h);ctx.lineTo(x+r,y+h);ctx.quadraticCurveTo(x,y+h,x,y+h-r);ctx.lineTo(x,y+r);ctx.quadraticCurveTo(x,y,x+r,y);ctx.closePath();}
+window.onload = initCarousel;
 </script>
 </body>
 </html>
